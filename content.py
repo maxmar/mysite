@@ -1,11 +1,11 @@
-home = {
+homeContent = {
     "pageTitle": "Alexey Bychko | Personal Site",
 
     "helloBlock": {
         "title": "Hello!",
         "me": "My name is Alexey,",
         "about": "I'm entrepreneur and independent consultant helping companies to apply best practices in software development",
-        "moreUrl": "/content-page"
+        "moreUrl": "/me"
     },
 
     "aboutBlock": {
@@ -83,10 +83,18 @@ home = {
     }
 }
 
-post = {
+postContent = {
     "pageTitle": "Alexey Bychko | Personal Site",
 
     "postTitle": "Lorem ipsum dolor sit amet",
     "image": "images/content-image.jpg",
     "content": "<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p><p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>"
+}
+
+meContent = {
+    "pageTitle": "Alexey Bychko | Me",
+
+    "postTitle": "Hi, I'm Alexey Bychko",
+    "image": "images/content-image.jpg",
+    "content": "<p>I'm entrepreneur and independent consultant helping companies to apply best practices in software development</p><p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>"
 }
