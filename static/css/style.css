@@ -350,6 +350,13 @@ h3 {
     margin-right: 1em;
 }
 
+.contact-us .social a {
+    width: 25%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 .contact-us .social a,
 .contact-us .social a:hover {
     color: #fff;
@@ -414,6 +421,23 @@ h3 {
 }
 
 
+@media (max-width: 1170px) {
+    .contact-us .social {
+        display: block;
+    }
+
+    .contact-us .social a {
+        float: left;
+        width: 50%;
+        height: 2em;
+    }
+
+    .contact-us .social a:nth-child(2),
+    .contact-us .social a:nth-child(4) {
+        text-align: right;
+    }
+}
+
 @media (max-width: 1000px) {
     .technology h4 {
         padding: 0.5em;
@@ -445,9 +469,5 @@ h3 {
 @media (max-width: 800px) {
     body {
         font-size: 12px;
-    }
-
-    .contact-us .social {
-        padding: 0 0.5em;
     }
 }

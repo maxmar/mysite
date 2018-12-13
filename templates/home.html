@@ -2,7 +2,7 @@
 
 
 {% block head %}
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 {% endblock %}
 
 
@@ -27,10 +27,10 @@
     <div class="merits-list">
 
         {% for merit in aboutBlock.merits %}
-            <div class="merit gradient-bg">
-                <div class="number">{{ merit.number }}</div>
-                <div class="description">{{ merit.description }}</div>
-            </div>
+        <div class="merit gradient-bg">
+            <div class="number">{{ merit.number }}</div>
+            <div class="description">{{ merit.description }}</div>
+        </div>
         {% endfor %}
 
     </div>
@@ -42,16 +42,16 @@
     <div class="technologies-list slides">
 
         {% for slide in technologiesBlock.slides %}
-            <div class="technology">
-                <div class="thumbnail" style="background-image: url({{ url_for('static', filename=slide.thumbnail) }})"></div>
+        <div class="technology">
+            <div class="thumbnail" style="background-image: url({{ url_for('static', filename=slide.thumbnail) }})"></div>
 
-                <h4>{{ slide.title }}</h4>
-                <p class="description">{{ slide.description }}</p>
+            <h4>{{ slide.title }}</h4>
+            <p class="description">{{ slide.description }}</p>
 
-                <div class="actions">
-                    <a href="{{ slide.moreUrl }}" class="btn btn-more gradient-bg animated-bg">Learn more</a>
-                </div>
+            <div class="actions">
+                <a href="{{ slide.moreUrl }}" class="btn btn-more gradient-bg animated-bg">Learn more</a>
             </div>
+        </div>
         {% endfor %}
 
     </div>
@@ -69,6 +69,7 @@
         <a href="mailto:{{ contactsBlock.email }}" target="_blank"><i class="icon icon-email"></i>{{ contactsBlock.email }}</a>
         <a href="https://{{ contactsBlock.github }}" target="_blank"><i class="icon icon-github"></i>{{ contactsBlock.github }}</a>
         <a href="https://{{ contactsBlock.linkedin }}" target="_blank"><i class="icon icon-linkedin"></i>{{ contactsBlock.linkedin }}</a>
+        <a href="https://{{ contactsBlock.twitter }}" target="_blank"><i class="icon icon-twitter"></i>{{ contactsBlock.twitter }}</a>
     </div>
 </div>
 {% endblock %}

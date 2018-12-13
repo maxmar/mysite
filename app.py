@@ -1,13 +1,12 @@
 from flask import Flask, render_template
+from content import home, post
 
 app = Flask(__name__)
 
 @app.route('/')
-def home():
-    import content
-    return render_template('home.html', **content.home)
+def main():
+    return render_template('home.html', **home)
 
 @app.route('/content-page')
 def content():
-    import content
-    return render_template('post.html', **content.post)
+    return render_template('post.html', **post)

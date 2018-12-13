@@ -75,9 +75,11 @@ home = {
 
     "contactsBlock": {
         "title": "Contact me now:",
+
         "email": "info@abychko.expert",
-        "github": "https://github.com/abychko",
-        "linkedin": "https://linkedin.com/abychko",
+        "github": "github.com/abychko",
+        "linkedin": "linkedin.com/abychko",
+        "twitter": "twitter.com/abychko",
     }
 }
 
