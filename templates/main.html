@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ pageTitle }}</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-reboot.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fontello.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    {% block head %}{% endblock %}
+</head>
+<body>
+
+{% block content %}{% endblock %}
+
+{% block footer %}{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+{% extends "main.html" %}
+
+
+{% block head %}
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+{% endblock %}
+
+
+{% block content %}
+<div class="hello container">
+    <div class="hello-wrapper">
+        <h3>{{ helloBlock.title }}</h3>
+        <p class="subtitle me">{{ helloBlock.me }}</p>
+        <p class="subtitle">{{ helloBlock.about }}</p>
+    </div>
+    <div class="actions">
+        <a href="{{ helloBlock.moreUrl }}" class="btn btn-more gradient-bg animated-bg">Learn more</a>
+    </div>
+</div>
+
+<div class="about-us container">
+    <div class="details">
+        <h3>{{ aboutBlock.title }}</h3>
+        <p class="subtitle">{{ aboutBlock.subtitle|safe }}</p>
+    </div>
+
+    <div class="merits-list">
+
+        {% for merit in aboutBlock.merits %}
+            <div class="merit gradient-bg">
+                <div class="number">{{ merit.number }}</div>
+                <div class="description">{{ merit.description }}</div>
+            </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+<div class="technologies container">
+    <h3>{{ technologiesBlock.title }}</h3>
+
+    <div class="technologies-list slides">
+
+        {% for slide in technologiesBlock.slides %}
+            <div class="technology">
+                <div class="thumbnail" style="background-image: url({{ url_for('static', filename=slide.thumbnail) }})"></div>
+
+                <h4>{{ slide.title }}</h4>
+                <p class="description">{{ slide.description }}</p>
+
+                <div class="actions">
+                    <a href="{{ slide.moreUrl }}" class="btn btn-more gradient-bg animated-bg">Learn more</a>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+
+    <div class="slides-controls">
+        <button class="slider-control arrow-left arrow-prev"><i class="icon icon-arrow-right"></i></button>
+        <button class="slider-control arrow-next"><i class="icon icon-arrow-right"></i></button>
+    </div>
+</div>
+
+<div class="contact-us container gradient-bg">
+    <h3>{{ contactsBlock.title }}</h3>
+
+    <div class="social">
+        <a href="mailto:{{ contactsBlock.email }}" target="_blank"><i class="icon icon-email"></i>{{ contactsBlock.email }}</a>
+        <a href="https://{{ contactsBlock.github }}" target="_blank"><i class="icon icon-github"></i>{{ contactsBlock.github }}</a>
+        <a href="https://{{ contactsBlock.linkedin }}" target="_blank"><i class="icon icon-linkedin"></i>{{ contactsBlock.linkedin }}</a>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block footer %}
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+    $('.slides').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: $('.arrow-prev'),
+        nextArrow: $('.arrow-next'),
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "main.html" %}
+
+
+{% block content %}
+<div class="content-header container">
+    <div class="bordered-container">
+        <a href="/" class="go-home"><i class="icon arrow-left icon-arrow-right"></i> Home</a>
+        <h3 class="post-title">{{ postTitle }}</h3>
+    </div>
+</div>
+
+<div class="post-content container">
+    <img src="{{ url_for('static', filename=image) }}" alt="{{ postTitle }}" />
+    {{ content|safe }}
+</div>
+
+<div class="content-footer container">
+    <div class="bordered-container">
+        <a href="/" class="go-home"><i class="icon arrow-left icon-arrow-right"></i> Home</a>
+    </div>
+</div>
+{% endblock %}
