@@ -329,13 +329,15 @@ h3 {
 
 /* CONTACT US */
 .contact-us {
+    padding-bottom: 1.5em;
+    padding-top: 2em;
     color: #fff;
-    padding-bottom: 3.5em;
 }
 
 .contact-us h3 {
     position: static;
-    padding: 0.6em 1.9em 0.9em;
+    padding: 0.6em 1.1em 0;
+    padding-bottom: 0.5em;
 }
 
 .contact-us .social {

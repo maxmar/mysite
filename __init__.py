@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from content import homeContent, meContent, postContent
+from mysite.content import homeContent, meContent, postContent
 
 app = Flask(__name__)
 
